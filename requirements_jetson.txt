@@ -1,0 +1,45 @@
+# Pedestrian crossing intention prediction - Jetson dependencies
+# Target: Python 3.10 / JetPack 6.x
+# Install with: python3 -m pip install -r requirements_jetson.txt
+
+# Core numerical and image-processing packages
+numpy==1.26.4
+scipy==1.15.3
+Pillow==12.2.0
+PyYAML==6.0
+packaging==26.2
+tqdm==4.65.0
+easydict==1.10
+imutils==0.5.4
+natsort==8.3.1
+
+# Detection, pose estimation and web video stream
+ultralytics==8.4.41
+rtmlib>=0.0.13,<1.0
+Flask==3.1.3
+
+# Tracking, evaluation and visualization
+scikit-image==0.25.2
+scikit-learn>=1.3,<2.0
+pandas>=1.5,<3.0
+matplotlib==3.7.1
+
+# HRNet training/evaluation utilities
+json-tricks>=3.17,<4.0
+pycocotools>=2.0.7,<3.0
+munkres>=1.1.4,<2.0
+tensorboardX>=2.6,<3.0
+ffmpeg-python>=0.2,<1.0
+terminaltables>=3.1,<4.0
+Cython>=3.0,<4.0
+thop>=0.1.1
+
+# Do not add torch, torchvision, TensorRT or ONNX Runtime here.
+# On Jetson they must match the installed JetPack/CUDA version:
+#
+# 1. Install NVIDIA's Jetson PyTorch and torchvision wheels.
+# 2. TensorRT is supplied by JetPack (import name: tensorrt).
+# 3. Install the matching Jetson ONNX Runtime GPU wheel, for example:
+#      python3 -m pip install wheels/onnxruntime_gpu-1.20.1-cp310-cp310-linux_aarch64.whl
+# 4. Prefer JetPack's system OpenCV build. Installing opencv-python can replace
+#    the CUDA/GStreamer-enabled cv2 package supplied by JetPack.
