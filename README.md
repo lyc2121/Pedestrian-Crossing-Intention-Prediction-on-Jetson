@@ -240,7 +240,7 @@ https://drive.google.com/drive/folders/1xhG0kRH1EX5B9_Iz8gQJb7UNnn_riXi6
 
 
 
-`PedAST-GCN/best.onnx` 是本项目的过街意图预测模型，不是 Ultralytics 或 RTMPose 的公共权重。请从本项目的 GitHub Release、项目作者提供的网盘或训练产物中获取，并放到：
+`PedAST-GCN/best.onnx` 是本项目的过街意图预测模型，请联系作者(yanchengling23@gmail.com)，并放到：
 
 
 
